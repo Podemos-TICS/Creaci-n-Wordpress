@@ -1,0 +1,26 @@
+$TTL 12H
+$ORIGIN circulospodemos.info.
+@          IN              SOA             ns3355814.ip-37-187-21.eu. root.circulospodemos.info. (
+           2014032201      ; Serial
+           8H              ; Refresh
+           30M             ; Retry
+           4W              ; Expire
+           8H              ; Minimum TTL
+)
+                                IN              NS              ns3355814.ip-37-187-21.eu.
+                                IN              NS              ns.kimsufi.com.
+                                IN              MX      10      mail.circulospodemos.info.
+circulospodemos.info.           IN              A               37.187.21.167
+ns                              IN              A               37.187.21.167
+mail                            IN              A               37.187.21.167
+
+www                             IN              CNAME           circulospodemos.info.
+rss                             IN              CNAME           circulospodemos.info.
+
+pruebas                         IN              CNAME           circulospodemos.info.
+nombrecirculo                   IN              CNAME           circulospodemos.info.
+
+;###########Berlín########### 
+berlin	                        IN              CNAME           circulospodemos.info.
+foroberlin                      IN              CNAME           circulospodemos.info.
+

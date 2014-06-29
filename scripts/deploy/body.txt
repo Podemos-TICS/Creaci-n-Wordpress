@@ -1,0 +1,65 @@
+/** Host de MySQL (es muy probable que no necesites cambiarlo) */
+define('DB_HOST', 'localhost');
+
+/** Codificación de caracteres para la base de datos. */
+define('DB_CHARSET', 'utf8');
+
+/** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
+define('DB_COLLATE', '');
+
+/**#@+
+ * Claves únicas de autentificación.
+ *
+ * Define cada clave secreta con una frase aleatoria distinta.
+ * Puedes generarlas usando el {@link https://api.wordpress.org/secret-key/1.1/salt/ servicio de claves secretas de WordPress}
+ * Puedes cambiar las claves en cualquier momento para invalidar todas las cookies existentes. Esto forzará a todos los usuarios a volver a hacer login.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY', 'lu6z-XW$l-3d3olw&CMbV35^ORjLX~s*Q&=g*~%|FIq3n5!)}Qw{9+a3hkujH7KF'); // Cambia esto por tu frase aleatoria.
+define('SECURE_AUTH_KEY', '?/-;?>{XsFD_q+a+V~@{oOLV.XH=I<&?[-TyeLi`C 2*g$09SLKln0$i*[V|K;dB'); // Cambia esto por tu frase aleatoria.
+define('LOGGED_IN_KEY', '=wONk6XGpl|I=z+#-O-Mi,zFg5pn8=~m_OP5fHtK_qkT`Thwb<fKElj.?Ql[U-i@'); // Cambia esto por tu frase aleatoria.
+define('NONCE_KEY', '{G^VsD99k~Y++:+t3$UrLVE1(b3p1N:y,p[;y$3QNA6-_59;E!E2s*:CXY*;{P=T'); // Cambia esto por tu frase aleatoria.
+define('AUTH_SALT', '[:`pXd<H|%|N-#i#jO}|W$PycAqfnHYpSb6>k?TN/mW@L-FmUgu.gb)+v,nK:DLC'); // Cambia esto por tu frase aleatoria.
+define('SECURE_AUTH_SALT', 'Z-uGSY5s`JqqNy__5~NCqmwQ[B`rZ-p76lO#pJdi9KRPI(Kvg$|&Iz ;!4bKimxy'); // Cambia esto por tu frase aleatoria.
+define('LOGGED_IN_SALT', 'RX)sH`;T}bpSS*UIsufHo;>||6%G$278j0i.;4+.4Ryb!_$=)UwAwN^76`-hgVBm'); // Cambia esto por tu frase aleatoria.
+define('NONCE_SALT', ',I#(K_=SlaIFcKuTmYv0rcM;HTc:1v/0wiP]nH(4IgSP1{)!blt9NwDatXD$z/--'); // Cambia esto por tu frase aleatoria.
+
+/**#@-*/
+
+/**
+ * Prefijo de la base de datos de WordPress.
+ *
+ * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
+ * Emplea solo números, letras y guión bajo.
+ */
+$table_prefix  = 'wp_';
+
+/**
+ * Idioma de WordPress.
+ *
+ * Cambia lo siguiente para tener WordPress en tu idioma. El correspondiente archivo MO
+ * del lenguaje elegido debe encontrarse en wp-content/languages.
+ * Por ejemplo, instala ca_ES.mo copiándolo a wp-content/languages y define WPLANG como 'ca_ES'
+ * para traducir WordPress al catalán.
+ */
+define('WPLANG', 'es_ES');
+
+/**
+ * Para desarrolladores: modo debug de WordPress.
+ *
+ * Cambia esto a true para activar la muestra de avisos durante el desarrollo.
+ * Se recomienda encarecidamente a los desarrolladores de temas y plugins que usen WP_DEBUG
+ * en sus entornos de desarrollo.
+ */
+define('WP_DEBUG', false);
+
+/* ¡Eso es todo, deja de editar! Feliz blogging */
+
+/** WordPress absolute path to the Wordpress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+
